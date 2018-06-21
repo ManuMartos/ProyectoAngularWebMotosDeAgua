@@ -1,0 +1,207 @@
+body {
+    background-image: url("../image/campeonato.jpg");
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 130%;
+}
+
+html,
+body {
+    margin: 0px;
+    height: 100%;
+    background-image: url("../image/campeonato.jpg");
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 130%;
+}
+
+.head-title {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    display: block;
+}
+
+.navigation {
+    text-align: center;
+    color: black;
+    background: #084B8A;
+    height: 100%;
+}
+
+.navigation a {
+    color: black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    color: white;
+}
+
+.navigation .glyphicon {
+    font-size: 20px;
+    display: block;
+    width: 100%;
+}
+
+#user_logged {
+    text-decoration: center;
+    background: #084B8A;
+    position: absolute;
+    bottom: 0px;
+    border-top: 1px solid #084B8A;
+}
+
+#user_logged .glyphicon-log-out {
+    font-size: 16px;
+}
+
+.btn-logout {
+    cursor: pointer;
+}
+
+#user_logged .user_image {
+    background: #eee;
+    border-radius: 100px;
+    height: 57px;
+    width: 57px;
+    margin: 0px auto;
+    margin-top: 15px;
+    overflow: hidden;
+}
+
+#user_logged .user-image img {
+    width: 57px;
+}
+
+.actived {
+    border-bottom: 4px solid orangered;
+    padding-bottom: 4px;
+}
+
+.team_image_for_edit {
+    width: 150px;
+}
+
+.pilot_image_for_edit {
+    width: 150px;
+}
+
+.team-list {
+    margin: 0px;
+    padding: 0px;
+    margin-top: 30px;
+    list-style: none;
+    min-height: 400px;
+}
+
+.pilot-list {
+    margin: 0px;
+    padding: 0px;
+    margin-top: 30px;
+    list-style: none;
+    min-height: 400px;
+}
+
+.team-item {
+    width: 230px;
+    margin: 0px;
+    padding: 0px;
+    height: 317px;
+    border: 1px solid #444;
+    margin-left: 20px;
+    background: #222326;
+}
+
+.pilot-item {
+    width: 230px;
+    margin: 0px;
+    padding: 0px;
+    height: 317px;
+    border: 1px solid #444;
+    margin-left: 20px;
+    background: #222326;
+}
+
+.team-item .team-image {
+    height: 245px;
+    width: 100%;
+    overflow: hidden;
+    background: black;
+}
+
+.pilot-item .pilot-image {
+    height: 245px;
+    width: 100%;
+    overflow: hidden;
+    background: black;
+}
+
+.team-item .team-image img {
+    height: 100%;
+}
+
+.pilot-item .pilot-image img {
+    height: 100%;
+}
+
+.team-item .team-name {
+    color: white;
+    padding: 10px;
+    background: #222326;
+}
+
+.pilot-item .pilot-name {
+    color: white;
+    padding: 10px;
+    background: #222326;
+}
+
+.team-item .team-name a {
+    color: white;
+}
+
+.pilot-item .pilot-name a {
+    color: white;
+}
+
+#team-head-card .image {
+    width: 170px;
+    height: 170px;
+    overflow: hidden;
+    float: left;
+    margin-right: 30px;
+}
+
+#pilot-head-card .image {
+    width: 170px;
+    height: 170px;
+    overflow: hidden;
+    float: left;
+    margin-right: 30px;
+}
+
+#team-head-card .image .img {
+    height: 170px;
+}
+
+#pilot-head-card .image .img {
+    height: 170px;
+}
+
+.seguro {
+    margin-top: -40px;
+    background: #222326;
+    position: absolute;
+    height: 40px;
+}
+
+#titulo {
+    color: white;
+}

@@ -1,0 +1,30 @@
+<div class="head-page" *ngIf="identity">
+    <h1>{{ titulo }}</h1>
+
+    <a *ngIf="identity && identity.role == 'ROLE_ADMIN'" class="btn btn-default" [routerLink]="['/crear-piloto']">
+		Añadir Piloto
+	</a>
+    <ul class="pagination pull-right">
+        <li><a [routerLink]="['/pilots', prev_page]">&laquo;</a></li>
+        <li><a [routerLink]="['/pilots', next_page]">&raquo;</a></li>
+    </ul>
+</div>
+<div class="clearfix"></div>
+<ul class="pilot-list" *ngIf="identity">
+    <li *ngFor="let pilot of pilots" class="col-lg-6 pilot-item">
+        <div class="pilot-image">
+            <img src="{{ url + 'get-image-pilot/' + pilot.image }}" style="width: 100px">
+        </div>
+        <div class="pilot-name">
+            <a [routerLink]="['/piloto', pilot._id]">{{pilot.name}}</a>
+        </div>
+        <div class="buttons" *ngIf="identity.role == 'ROLE_ADMIN'">
+            <a [routerLink]="['/editar-pilot', pilot._id]" class="btn btn-sm btn-warning">Editar</a>
+            <a (click)="onDeleteConfirm(pilot._id)" class="btn btn-sm btn-danger">Borrar</a>
+        </div>
+        <div class="seguro" *ngIf="confirmado == pilot._id">
+            <a (click)="onDeletePilot(pilot._id)" class="btn btn-sm btn-danger">Borrar</a>
+            <a (click)="onCancelPilot()" class="btn btn-sm btn-primary">Cancelar</a>
+        </div>
+    </li>
+</ul>

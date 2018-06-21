@@ -1,0 +1,11 @@
+<div *ngIf="team" class="team-box">
+    <div id="team-head-card">
+        <div class="image">
+            <img src="{{ url + 'get-image-team/' + team.image }}" *ngIf="team.image && team.image != 'null'">
+        </div>
+        <div class="data">
+            <h1>{{ team.name }}</h1>
+            <p class="description">{{ team.description }}</p>
+        </div>
+    </div>
+</div>

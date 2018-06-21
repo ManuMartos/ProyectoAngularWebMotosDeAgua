@@ -1,0 +1,12 @@
+<div *ngIf="pilot" class="pilot-box">
+    <div id="pilot-head-card">
+        <div class="image">
+            <img src="{{ url + 'get-image-pilot/' + pilot.image }}" *ngIf="pilot.image && pilot.image != 'null'">
+        </div>
+        <div class="data">
+            <h1>{{ pilot.name }}</h1>
+            <p class="description">{{ pilot.description }}</p>
+            <p class="year">{{ pilot.year }}</p>
+        </div>
+    </div>
+</div>
